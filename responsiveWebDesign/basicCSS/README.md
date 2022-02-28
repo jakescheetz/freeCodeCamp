@@ -82,6 +82,13 @@ to selector an element of a specific type to style something
 - id styling has even higher precedence than classes
 - inline styling has the highest precedence
 - the syntax ```!important``` can be added to any CSS element to give it the highest order of precedence
+- if you define something in the root selector it is available globally in the document: 
+```
+:root {
+  *stlying here*
+}
+```
+- see 'use-a-media-query-to-change-a-variable.txt'
 
 ### CSS colors
 - can also use hex instead of the keyword system 
@@ -93,3 +100,12 @@ to selector an element of a specific type to style something
 ``` rgb(0-256, 0-256, 0-256) ```
 
 ### CSS Variables
+- to make a variable in CSS, you need to use the syntax: 
+``` --myVariable: value; ```
+- then this variable can be used anywhere in the code as a value to style something
+  - you assign can use the variable with the following syntax: ``` property: var(--myVar); ```
+- a useful debugging tip is to set a fallback value for CSS variables, this can be done with: 
+  - ``` --myVar(value, backupValue); ```
+- see 'attach-a-fallback-value.txt'
+- if you overwrite the value of a variable inside of a selector class, then the stlying uses the overwritten value
+
