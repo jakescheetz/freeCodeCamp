@@ -54,3 +54,42 @@ font-family: FAMILY_NAME, GENERIC_NAME;
 - they are another method of providing unique styling similar to classes
 - instead of .name, we use #name when specifying a styling for an id
 - see 'use-an-id-attribute-to-style-an-element.txt'
+
+### Padding / Margins 
+- all HTML elements are essentially rectangles
+- the padding controls the amount of space that the item will take up in the overall structure (vertical spacing)
+- the margin controls the space between the border and the padding (horizontal spacing)
+- margins can be negative to make a smaller element take up a whole element
+- margin/padding have a top, right, bottom, left control
+- instead of individually specifying the size of each side on an element, use clockwise notation: 
+  - top, right, bottom, left
+  - ``` padding: 10px 20px 10px 20px; ```
+  - this works with margin too
+  - see 'use-clockwise-notation-to-specify-elements.txt'
+- sizing can be relative (em instead of pixels)
+  - this is based off of the font-size
+
+### Other selectors
+- you can use the notation: 
+``` [type='checkbox']{ styling here} ```
+to selector an element of a specific type to style something
+- see 'use-attribute-selectors-to-style-an-element.txt'
+
+### CSS Inheritence
+- every html file automatically inherts a body element 
+- if you style something specifically with a selector than that takes precedence over inheritence
+- if an element has multiple classes of styles the class that was defined last in the style sheet will take predence over the others
+- id styling has even higher precedence than classes
+- inline styling has the highest precedence
+- the syntax ```!important``` can be added to any CSS element to give it the highest order of precedence
+
+### CSS colors
+- can also use hex instead of the keyword system 
+- hex uses six digits to specify a color 
+  - a 0 represents the absence of color
+  - see 'use-hex-code-to-mix-colors.txt'
+- you can use three digits instead of six but it makes customization less workable
+- can also use the rgb notation: 
+``` rgb(0-256, 0-256, 0-256) ```
+
+### CSS Variables
