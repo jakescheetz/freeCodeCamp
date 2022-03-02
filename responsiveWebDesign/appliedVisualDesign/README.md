@@ -19,6 +19,8 @@
 - we can lock an element to the screen with the fixed property
     - this is like a navbar that stays at the top of the screen as you scroll dow. 
     - see 'lock-an-element-to-the-browser-window-with-fixed-positioning.txt'
+- the z-index element can be used to bring things to the front or back
+
 #### Opacity
 - ranges from 0-1
 - the value 1, is not see through
@@ -30,3 +32,15 @@
     - i.e. if someone is hovering over a link with a mouse, create a pop up
 - see 'adjust-the-hover-state-of-an-anchor-tag.txt'
 
+
+### Colors
+- complimentary colors are good to have to draw attention to items on a webpage, but too much of them on a page and its jarring
+- Saturation: the amount gray in a color 
+    - full saturation has no gray
+    - minimal saturation is completely gray
+- Lightness: is the a mount of white or black is in a color
+    - 0% black
+    - 100% white
+- Hue: general perception of color
+    - 0-360 degrees of color represented by a wheel
+- hsl(), sets the hue, saturation and lightness of a chosen color
