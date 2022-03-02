@@ -6,9 +6,13 @@ The following repository is a collection of all of my solutions, notes and certi
 ``` certification tracks -> courses ->  course notes & code files ```
 
 ### Certifications
-Currently pursuing: Responsive Web Design
+Responsive Web Design
 - Topics:
     - Basic HTML
     - Basic CSS
     - Applied Visual Design
 
+Javascript Data Structures and Algorithms
+- Topics: 
+    - Basic Javascript
+    
